@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Local Business Website</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#333;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+#home{
+background:#007BFF;
+color:white;
+padding:100px 20px;
+}
+
+.services{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:20px;
+width:220px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.gallery img{
+width:250px;
+border-radius:10px;
+}
+
+input, textarea{
+width:80%;
+padding:10px;
+margin:10px;
+}
+
+button{
+padding:10px 20px;
+background:black;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+button:hover{
+background:orange;
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>My Business</h2>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section id="home">
+
+<h1>Welcome to Our Business</h1>
+<p>Providing quality services for our customers</p>
+
+<button onclick="alert('Thank you for visiting!')">Book Service</button>
+
+</section>
+
+<section id="about">
+
+<h2>About Us</h2>
+
+<p style="max-width:600px;margin:auto">
+
+We are a local business dedicated to providing excellent service.
+Our goal is to deliver quality work and make our customers happy.
+
+</p>
+
+</section>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Service 1</h3>
+<p>High quality professional service.</p>
+</div>
+
+<div class="card">
+<h3>Service 2</h3>
+<p>Affordable and reliable solutions.</p>
+</div>
+
+<div class="card">
+<h3>Service 3</h3>
+<p>Customer satisfaction guaranteed.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Our Work</h2>
+
+<div class="gallery">
+
+<img src="https://picsum.photos/300/200?1">
+<img src="https://picsum.photos/300/200?2">
+<img src="https://picsum.photos/300/200?3">
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Your Message"></textarea>
+
+<br>
+
+<button onclick="submitForm()">Send Message</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 Local Business Website</p>
+
+</footer>
+
+<script>
+
+function submitForm(){
+alert("Thank you! We will contact you soon.");
+}
+
+</script>
+
+</body>
+</html>
